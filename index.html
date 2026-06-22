@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Text to HTML Converter - Clean ChatGPT Text Instantly</title>
+  <meta name="description" content="Convert AI-generated text, ChatGPT output, notes, and bullet points into clean HTML instantly. Free online AI text to HTML converter with live preview." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <h1>AI Text to HTML Converter</h1>
+  <p>Paste ChatGPT or AI-generated text and convert it into clean HTML instantly.</p>
+</header>
+
+<div class="container">
+  <div class="tool-card">
+    <label class="label">Input Text</label>
+    <textarea id="inputText" placeholder="Paste your AI-generated text here..." oninput="updateCounter()"></textarea>
+    <div class="counter" id="charCounter">0 characters</div>
+
+    <div class="buttons">
+      <button onclick="convertToHTML()">Convert to HTML</button>
+      <button onclick="copyHTML()">Copy HTML</button>
+      <button onclick="downloadHTML()">Download HTML</button>
+      <button onclick="loadExample()" class="secondary">Example Text</button>
+      <button onclick="clearAll()" class="secondary">Clear</button>
+      <button onclick="toggleDarkMode()" class="secondary">Dark Mode</button>
+    </div>
+
+    <label class="label">Output HTML</label>
+    <textarea id="outputHTML" readonly placeholder="Your HTML will appear here..."></textarea>
+
+    <label class="label">Live Preview</label>
+    <div id="preview">Your formatted preview will appear here...</div>
+  </div>
+
+  <div class="ad-box">AdSense Ad Space</div>
+
+  <div class="content-card">
+    <h2>What is an AI Text to HTML Converter?</h2>
+    <p>An AI Text to HTML Converter is a free online tool that converts AI-generated content, ChatGPT responses, notes, headings, paragraphs, and bullet points into clean HTML code.</p>
+
+    <h2>How to Use This Tool</h2>
+    <p>Paste your text into the input box, click “Convert to HTML,” and the tool will generate clean HTML instantly. You can copy the HTML, preview it, or download it as an HTML file.</p>
+
+    <h2>Why Clean HTML Matters</h2>
+    <p>Clean HTML is useful for blogs, websites, email templates, newsletters, landing pages, and content management systems. It helps keep content organized and easy to publish.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Convert headings to HTML</li>
+      <li>Convert bullet points to lists</li>
+      <li>Convert paragraphs to HTML</li>
+      <li>Live HTML preview</li>
+      <li>Copy HTML instantly</li>
+      <li>Download HTML file</li>
+      <li>Dark mode</li>
+    </ul>
+  </div>
+
+  <div class="content-card">
+    <h2>FAQ</h2>
+    <h3>Is this AI Text to HTML Converter free?</h3>
+    <p>Yes, this tool is completely free to use.</p>
+    <h3>Does this tool require login?</h3>
+    <p>No, you can use it without creating an account.</p>
+    <h3>Can I use the HTML on my website?</h3>
+    <p>Yes, you can copy the generated HTML and use it in your website, blog, or email template.</p>
+    <h3>Does this tool store my text?</h3>
+    <p>No, the conversion happens inside your browser. Your text is not uploaded to a server.</p>
+  </div>
+</div>
+
+<footer>© 2026 AI Text to HTML Converter. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
