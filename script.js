@@ -179,3 +179,8 @@ function loadExample(type) {
   updateCounter('input', 'counter');
   runTool(type);
 }
+
+function toggleMenu(){
+  const menu=document.getElementById('siteMenu');
+  if(menu) menu.classList.toggle('open');
+}
