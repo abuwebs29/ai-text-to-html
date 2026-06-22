@@ -1,0 +1,1 @@
+Upload ALL files in this folder to your GitHub repository root. Keep styles.css, script.js, analytics.js, favicon.svg, sitemap.xml, robots.txt in the same folder as index.html. Replace G-XXXXXXXXXX in analytics.js with your GA4 Measurement ID.
