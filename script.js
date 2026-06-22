@@ -17,11 +17,23 @@ function updateCounter(inputId, counterId) {
   if (input && counter) counter.textContent = input.value.length + ' characters';
 }
 
+function showToast(message){
+  let toast = document.querySelector('.toast');
+  if(!toast){
+    toast = document.createElement('div');
+    toast.className = 'toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 1800);
+}
+
 function copyFrom(id) {
   const el = document.getElementById(id);
-  if (!el || !el.value.trim()) { alert('Nothing to copy yet.'); return; }
-  navigator.clipboard.writeText(el.value).then(() => alert('Copied!')).catch(() => {
-    el.select(); document.execCommand('copy'); alert('Copied!');
+  if (!el || !el.value.trim()) { showToast('Nothing to copy yet.'); return; }
+  navigator.clipboard.writeText(el.value).then(() => showToast('Copied to clipboard')).catch(() => {
+    el.select(); document.execCommand('copy'); showToast('Copied to clipboard');
   });
 }
 
